@@ -1,10 +1,13 @@
+import WalletBar from './components/WalletBar'
 import Hero from './components/Hero'
 import SubmitAction from './components/SubmitAction'
 import ExploreProofs from './components/ExploreProofs'
+import './components/styles.css'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-slate-50">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-900">
+      <WalletBar />
       <Hero />
 
       <main className="relative z-10">

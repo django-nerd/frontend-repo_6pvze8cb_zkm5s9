@@ -18,11 +18,16 @@
   }
 
   body {
-    @apply antialiased;
+    @apply antialiased bg-slate-950 text-slate-100;
   }
 }
 
-/* Custom utility classes for shadcn/ui patterns */
+/* Dark theme component tokens */
+@layer components {
+  .card-dark { @apply bg-slate-900 ring-1 ring-slate-800 rounded-2xl; }
+}
+
+/* Custom utility classes */
 @layer utilities {
   .animate-in {
     animation-name: animateIn;
